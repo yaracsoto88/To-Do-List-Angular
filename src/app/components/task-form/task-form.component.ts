@@ -16,6 +16,7 @@ export class TaskFormComponent implements OnInit {
         completed: false
       }
       this.tasks.push(newTask);
+      console.log(this.tasks);
       this.newTask = '';
     }
   }

@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TaskFormComponent } from './components/task-form/task-form.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
-import { TaskFilterComponent } from './components/task-filter/task-filter.component';
 
 
 @NgModule({
@@ -16,7 +15,7 @@ import { TaskFilterComponent } from './components/task-filter/task-filter.compon
     NavbarComponent,
     TaskFormComponent,
     TaskListComponent,
-    TaskFilterComponent
+    
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TaskFormComponent } from './components/task-form/task-form.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
+import { DataService } from './data.service';
 
 
 @NgModule({
@@ -23,9 +24,7 @@ import { TaskListComponent } from './components/task-list/task-list.component';
     FormsModule,
     DragDropModule
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [ provideClientHydration(), DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
